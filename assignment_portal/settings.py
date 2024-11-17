@@ -129,7 +129,7 @@ REST_FRAMEWORK = {
     'EXCEPTION_HANDLER': 'myapp.utils.custom_exception_handler',
 }
 
-mongoengine.connect('assignment-portal', host='mongodb+srv://himanshusingh:himanshusingh@assignment-portal.0dks7.mongodb.net/')
+mongoengine.connect('assignment-portal', host='MONGO URI')
 
 def custom_exception_handler(exc, context):
     response = exception_handler(exc, context)
